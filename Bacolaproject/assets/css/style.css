@@ -1,4 +1,21 @@
-body { 
+.header-medicalcare {
+  position: relative;
+    color: #fff;
+    background-color: var(--color-primary);
+    z-index: 1001;
+}
+.header-medicalcare .container {
+  font-size: .75rem;
+  text-align: center;
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
+
+
+}
+
+
+
+/* body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -21,4 +38,4 @@ body {
   }
   .header-right {
     float: right;
-  }
+  } */
