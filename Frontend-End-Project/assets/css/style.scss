@@ -1,0 +1,92 @@
+.medicalcare-bacground{
+    text-align: center;
+    background-color: darkblue;
+    height: 40px;
+    span {
+        color: white;
+    }
+
+}
+
+ul {
+    display: flex;
+    padding: 10px;
+    list-style-type: none;
+    li{
+        margin-left: 10px;
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            color : black
+        }
+
+    }
+
+
+}
+.secure-delivery {
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 15px;
+
+    span{
+        margin-left: 10px;
+    }
+}
+.select {
+    margin-top: 10px;
+}
+.logo {
+    img {
+        width: 150px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    span {
+        font-size: 10px;
+        margin-left: 10px;
+        color: gray;
+    }
+}
+.location {
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: black;
+    border-radius: 20px;
+    position: relative;
+    width: 200px;
+}
+.research-product {
+    position: relative;
+    line-height: 100%;
+    display: block;
+    color: black;
+    min-width: 250px;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    box-sizing: border-box;
+}
+.input {
+    i{
+        position: absolute;
+        top: 0;
+    }
+}
+
+#navbar-3{
+background-color: white;
+width: 100%;
+// .elements{
+// //    display:flex;
+// }
+}
+
+#main-grid{
+
+    .col-2-custom{
+        width: 228px !important;
+        height: auto;
+    }
+}
