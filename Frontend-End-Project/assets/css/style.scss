@@ -90,3 +90,45 @@ width: 100%;
         height: auto;
     }
 }
+.product{
+    position: relative;
+    -webkit-box-flex: 1;
+    .deals-header{
+        padding: 20px;
+    }
+    .h4{
+        font-size: 20px;
+        color:#233a95;
+    }
+    .countdown{
+        font-size: 20px;
+        width: 30px;
+        height: 3p;
+        background-color: #ed174a;
+
+    }
+    .deals-counter-text {
+        font-size: 100px;
+        margin-top: 10px;
+        color: gray;
+    }
+    .product-wrapper {
+        background-color: white;
+        .product-sale{
+          background-color: #ed174a;
+        }
+    }
+}
+
+.span{
+
+    color: black;
+    .del {
+        color: black;
+    }
+    
+}
+.control-instock{
+    color: green;
+    
+}
