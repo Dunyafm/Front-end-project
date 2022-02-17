@@ -10,6 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/flipclock.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -26,7 +27,7 @@
                 <div class="row d-flex">
                     <div class="col-4">
                         <div class="navbar-ul">
-                            <ul>
+                            <ul class="navbar-menu">
                                 <li><a href="">About Us</a></li>
                                 <li><a href="">My contact</a></li>
                                 <li><a href="">Wishlist</a></li>
@@ -269,8 +270,10 @@
                         <div class="timer-card ">
                             <div class="time">
                                 <div class="timer-head">
+
                                     <h6>Deals of the<b>week</b>!</h6>
                                     <p id="demo"></p>
+                                    <div class="clock"></div>
                                     <h3>Remains until the end of the offer</h3>
                                 </div>
                                 <div class="timer-image">
@@ -286,7 +289,10 @@
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="fas fa-star"></i></span>
                                         <span><i class="fas fa-star"></i></span>
-
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 65%"
+                                                aria-valuenow="65" aria-valuemin="10" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +302,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./assets/img/imgaddcard/product-image-62-600x540.jpg" class="card-img-top"
+                                    <img src="./assets/img/Home-page/product-image-62-600x540.jpg" class="card-img-top"
                                         alt="...">
                                     <div class="card-body">
                                         <h5 class="Italian-Style Chicken">All Natural Italian-Style Chicken Meatballs
@@ -311,7 +317,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./assets/img/imgaddcard/product-image-60-600x540.jpg" class="card-img-top"
+                                    <img src="./assets/img/Home-page/product-image-60-600x540.jpg" class="card-img-top"
                                         alt="...">
                                     <div class="card-body">
                                         <h5 class="Boomchickapop Corn">Angie’s Boomchickapop Sweet & Salty Kettle Corn
@@ -326,7 +332,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./assets/img/imgaddcard/product-image-46-346x310.jpg" class="card-img-top"
+                                    <img src="./assets/img/Home-page/product-image-46-346x310.jpg" class="card-img-top"
                                         alt="...">
                                     <div class="card-body">
                                         <h5 class="Cheese Creamy Original">Field Roast Chao Cheese Creamy Original</h5>
@@ -339,24 +345,24 @@
                                 </div>
 
                             </div>
-                            <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/imgaddcard/Crispy.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="Crispy Classic Buffalo Wings">Foster Farms Takeout Crispy Classic Buffalo
-                                        Wings</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <div class="col-lg-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./assets/img/Home-page/Crispy.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="Crispy Classic Buffalo Wings">Foster Farms Takeout Crispy Classic
+                                            Buffalo
+                                            Wings</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-
-                        <div class="container">
-                            <div class="row">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./assets/img/imgaddcard/blueDiamond.jpg" class="card-img-top" alt="...">
+                                    <img src="./assets/img/Home-page/blueDiamond.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="Blue Diamond Almonds">Blue Diamond Almonds Lightly Salted</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make
@@ -369,56 +375,81 @@
                             </div>
 
                         </div>
-
-                    </div>
-                    <div class="container">
-                        <div class="row">
+                        
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="./assets/img/imgaddcard/Fruits.jpg" class="card-img-top" alt="...">
+                                <img src="./assets/img/Home-page/Fruits.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="Blueberries">Blueberries – 1 Pint Package</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the
                                         card's content.</p>
                                     <a href="#" class="btn btn-primary">Add to Cart</a>
-
+            
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
+                </div>
+
+            </div>
+            
+
+        </section>
+
+
+        #banner
+        <section id="banner-chips">
+
+            <div class="col-2">
+                <div class="container">
+                    <div class="row">
+                        <img src="./assets/img/Bannerfor/bacola-banner1.jpg" alt="">
+                    </div>
 
                 </div>
+            </div>
+        </section>
+
+        <section id="banner-biskuvis">
+
+
+            <div class="col-2">
+                <div class="container">
+                    <div class="row">
+                        <img src="./assets/img/Bannerfor/bacola-banner-2.jpg" alt="">
+                    </div>
+                </div>
+
+
             </div>
 
 
         </section>
-        #banner
-        <div class="container">
-            <div class="col-2">
-                <img src="./assets/img/Bannerfor/bacola-banner1.jpg" alt="">
-            </div>
+        
 
-        </div>
-        <div class="container">
-            <div class="col-2">
+        <div class="col-2">
+            <div class="row">
                 <img src="./assets/img/Bannerfor/bacola-banner-2.jpg" alt="">
             </div>
 
         </div>
+
+
+
         <!-- <div class="timer-card">
         <div class="timer-card d-flex">
             <div class="time">
                 <h6>Deals of the<b>week</b>!</h6>
                 <p id="demo"></p>
+                
                 <h3>Remains until the end of the offer</h3>
                 <img src="./assets/img/chobani.jpg" alt="">
                 <h5>$5.49 $4.49</h5>
                 <a href=""><b>Chobani Complete Vanilla Greek Yogurt</b></a>
                 <h4>1 kq IN STOCK</h4>
-                <div class="icons">
+                        <div class="icons">
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
                     <span><i class="fas fa-star"></i></span>
@@ -554,15 +585,110 @@ tdown" data-date="2022/04/16">
 
 
 
+    <footer>
+        <div class="blue">
+            <div class="col-12 col-lg-5 ">
+                <img src="./assets/img/CouponFooter.png" alt="">
+                <h6 class="footer-title">$20 discount for your first order</h6>
+                <h3>Join our newsletter and get...</h3>
+            </div>
+            <div class="entry-title">
+                <p>Join our email subscription now to get updates on promotions and coupons.</p>
 
-<footer>
+            </div>
+            <div class="email-form">
+                <i class="klbth-icon-mail"></i>
+                <input class="subscribe-input" type="email" name="EMAIL" placeholder="Your email address" required="">
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col col-12 col-lg-2 col-five d-flex">
 
-    <div class="footer-background-addimg">
-        <img src="./assets/img/CouponFooter.png" alt="">
-    </div>
+                    <ul class="footer-menu">
+                        <span>FRUIT & VEGETABLES</span>
+                        <li>Fresh Vegetables</li>
+                        <li>Herbs & Seasonings</li>
+                        <li>Fresh Fruits</li>
+                        <li>Cuts & Sprouts</li>
+                        <li>Exotic Fruits & Veggies</li>
+                        <li>Packaged Produce</li>
+                        <li>Party Trays</li>
 
 
-</footer>
+
+                    </ul>
+                </div>
+                <div class="col col-12 col-lg-2 col-five">
+                    <ul class="footer-menu">
+                        <span>BREAKFAST & DAIRY</span>
+                        <li>Milk & Flavoured Milk</li>
+                        <li>Butter and Margarine</li>
+                        <li>Cheese</li>
+                        <li>Honey</li>
+                        <li>Marmalades</li>
+                        <li>Sour Cream and Dips</li>
+                        <li>Yogurt</li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col col-12 col-lg-2 col-five">
+                    <ul class="footer-menu">
+                        <span>MEAT & SEAFOOD</span>
+                        <li>Breakfast Sausage</li>
+                        <li>Dinner Sausage</li>
+                        <li>Beef </li>
+                        <li>Chicken</li>
+                        <li>Sliced Deli Meat</li>
+                        <li>Shrimp</li>
+                        <li>Crab and Shellfish</li>
+                        <li>Farm Raised Fillets</li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="col col-12 col-lg-2 col-five">
+                    <ul class="footer-menu">
+                        <span>BEVERAGES<span>
+                                <li>Water</li>
+                                <li>Sparkling Water</li>
+                                <li>Soda & Pop</li>
+                                <li>Coffee</li>
+                                <li>Tea & Kombucha</li>
+                                <li>Drink Boxes & Pouches</li>
+                                <li>Craft Beer</li>
+                                <li>Wine</li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="col col-12 col-lg-2 col-five">
+                    <ul class="footer-menu">
+                        <span>BREADS & BAKERY</span>
+                        <li>Milk & Flavoured Milk</li>
+                        <li>Butter and Margarine</li>
+                        <li>Cheese</li>
+                        <li>Honey</li>
+                        <li>Marmalades</li>
+                        <li>Sour Cream and Dips</li>
+                        <li>Yogurt</li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
 
 
 
@@ -580,6 +706,7 @@ tdown" data-date="2022/04/16">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/flipclock.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
