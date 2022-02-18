@@ -1,29 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .medicalcare-bacground{
-    text-align: center;
     background-color: darkblue;
     height: 40px;
-    span {
+    p {
+        text-align: center;
         color: white;
+        padding: 10px;
+        color: white;
+        font-size: 15px;
     }
 
 }
-
-.navbar-menu{
-    display: flex;
+.page-click {
+   
     padding: 10px;
-    list-style-type: none;
-    li{
-        margin-left: 10px;
-        a {
-            text-decoration: none;
-            font-size: 15px;
-            color : black
+    ul {
+        list-style: none;
+        display: flex;
+        li{
+            margin-left: 10px;
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                color: black;
+                cursor: pointer;
+            }
+            &:hover a {
+                display: block;
+                color: blue;
+            }
         }
-
     }
-
-
 }
+
 .secure-delivery {
     margin-left: 50px;
     padding: 10px;
@@ -32,11 +45,17 @@
     span{
         margin-left: 10px;
     }
+    i{
+        font-size: 20px;
+    }
+
+    
 }
 .select {
     margin-top: 10px;
 }
-.logo {
+.dropdown {
+    margin-left: 2;
     img {
         width: 150px;
         margin-top: 20px;

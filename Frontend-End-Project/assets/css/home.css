@@ -1,29 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .medicalcare-bacground {
-  text-align: center;
   background-color: darkblue;
   height: 40px;
 }
 
-.medicalcare-bacground span {
+.medicalcare-bacground p {
+  text-align: center;
   color: white;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
 }
 
-.navbar-menu {
+.page-click {
+  padding: 10px;
+}
+
+.page-click ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
-  list-style-type: none;
 }
 
-.navbar-menu li {
+.page-click ul li {
   margin-left: 10px;
 }
 
-.navbar-menu li a {
+.page-click ul li a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
   color: black;
+  cursor: pointer;
+}
+
+.page-click ul li:hover a {
+  display: block;
+  color: blue;
 }
 
 .secure-delivery {
@@ -36,17 +55,25 @@
   margin-left: 10px;
 }
 
+.secure-delivery i {
+  font-size: 20px;
+}
+
 .select {
   margin-top: 10px;
 }
 
-.logo img {
+.dropdown {
+  margin-left: 2;
+}
+
+.dropdown img {
   width: 150px;
   margin-top: 20px;
   margin-left: 10px;
 }
 
-.logo span {
+.dropdown span {
   font-size: 10px;
   margin-left: 10px;
   color: gray;
@@ -184,4 +211,4 @@
   padding-right: 15px;
   padding-left: 15px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */
